@@ -1,0 +1,382 @@
+@import url("~golden-layout/src/css/goldenlayout-dark-theme.css");
+
+body {
+    background-color: #333 !important;
+}
+
+.navbar-light {
+    background-color: #333 !important;
+}
+
+.navbar-light .navbar-nav li a {
+    color: #fff !important;
+}
+
+.navbar-light .navbar-nav li a:hover {
+    color: #fff !important;
+    background-color: #23272b !important;
+}
+
+.navbar-light ul.nav li:hover {
+    color: #fff !important;
+    background-color: #23272b !important;
+}
+
+.navbar-light a.nav-link {
+    border: rgb(140,140,140) 1px solid;
+}
+
+a.navbar-brand img.logo.inverse {
+    display: block !important;
+}
+
+a.navbar-brand img.logo.normal {
+    display: none !important;
+}
+
+.lm_header {
+    background-color: #121212 !important;
+}
+
+.nav.nav-tabs li a {
+    color: #eee !important;
+    background-color: #666 !important;
+}
+
+.nav.nav-tabs li:not(.active) a {
+    border-bottom: 1px solid #fff !important;
+}
+
+.nav.nav-tabs li.active a {
+    background-color: #666 !important;
+}
+
+.float-link {
+    color: #eee !important;
+    background-color: rgba(128, 128, 128, 0.5) !important;
+}
+
+.float-link:hover {
+    background-color: rgba(128, 128, 160, 0.5) !important;
+}
+
+.modal-header {
+    color: #eee !important;
+    background-color: #333 !important;
+}
+
+.modal-body {
+    background-color: #333 !important;
+    color: #eee !important;
+}
+
+.modal-content .well {
+    background-color: #222 !important;
+    color: #eee !important;
+}
+
+.modal-footer {
+    background-color: #333 !important;
+}
+
+.linked-code-decoration-margin {
+    background: #433b4b !important;
+}
+
+.opcode {
+    color: #066 !important;
+}
+
+.opcode:nth-child(odd) {
+    color: #060 !important;
+}
+
+.linked-code-decoration {
+    background: #555657 !important;
+}
+
+.selectize-control.single .selectize-input {
+    color: #f2f2f2 !important;
+    background: #666 linear-gradient(to bottom, #555, #222) !important;
+}
+
+.selectize-dropdown {
+    color: #f2f2f2 !important;
+    background-color: #666 !important;
+}
+
+.selectize-control.single .selectize-input.disabled {
+    color: #f2f2f2 !important;
+    background-color: #383838 !important;
+}
+
+.dropdown-menu {
+    color: #f2f2f2 !important;
+    background-color: #303030 !important;
+}
+
+.dropdown-menu li a {
+    color: #f2f2f2 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.font-option {
+    color: #eee !important;
+    background: #303030 !important;
+}
+
+.font-option:hover {
+    color: #fff !important;
+    background: #887788 !important;
+}
+
+.font-option-active {
+    background: #474747 !important;
+}
+
+.font-option-active:hover {
+    background: #998899 !important;
+}
+
+.notification {
+    background-color: gray !important;
+}
+
+.notification-info {
+    background-color: #f2f2f2 !important;
+}
+
+.notification-error {
+    background-color: #aa3333 !important;
+    color: #000;
+}
+
+.notification-on {
+    background-color: #33aa33 !important;
+    color: black;
+}
+
+.notification-off {
+    background-color: #222 !important;
+    color: #fff;
+}
+
+pre.content {
+    color: #aaa !important;
+    background-color: #333 !important;
+}
+
+.bottom-bar {
+    color: #aaa !important;
+    background-color: #333 !important;
+}
+
+select {
+    color: #000 !important;
+}
+
+input {
+    color: #eee !important;
+    background-color: #474747 !important;
+    border: 0 !important;
+}
+
+.bg-light {
+    background-color: #333 !important;
+}
+
+.btn-light {
+    color: #e2e2e2 !important;
+    background-color: #474747 !important;
+    border-color: #272727 !important;
+}
+
+.btn-light:hover {
+    background-color: #383838 !important;
+}
+
+.btn-light.active {
+    color: #f2f2f2 !important;
+}
+
+.btn-light:disabled {
+    color: #aaa !important;
+}
+
+.btn-light:disabled:hover {
+    background-color: #474747 !important;
+}
+
+.top-bar.btn-toolbar.bg-light {
+    border-bottom: 1px solid #202122;
+}
+
+.bottom-bar.bg-light {
+    border-top: 1px solid #202122;
+}
+
+.card {
+    background-color: #474747 !important;
+}
+
+.analysis,
+.mixed {
+    background: #fdfd96 !important;
+}
+
+.passed {
+    background: #77dd77 !important;
+}
+
+.missed {
+    background: #ff6961 !important;
+}
+
+.conformance-wrapper {
+    background-color: #1e1e1e !important;
+}
+
+.graph-placeholder {
+    background-color: #1e1e1e !important;
+}
+
+.text-count {
+    color: green !important;
+}
+
+.err-count {
+    color: orange !important;
+}
+
+.optgroup-header {
+    background-color: #555 !important;
+    color: #EEE !important;
+    text-shadow: none !important;
+}
+
+.commit-entry:nth-child(odd) {
+    background-color: #222222 !important;
+}
+
+.commit-entry:nth-child(even) {
+    background-color: #424242 !important;
+}
+
+.popover {
+    color: #f2f2f2 !important;
+    background-color: #a1a1a1;
+    border-color: #464545 !important;
+}
+
+.popover-header {
+    background-color: #929292 !important;
+    color: #000000 !important;
+}
+
+.popover, .popover-content, .libs-container, .lib-list {
+    background-color: #737373 !important;
+    color: #f2f2f2 !important;
+}
+
+.lib-item {
+    background-color: #333 !important;
+}
+
+#socialshare .share-twitter, .share-twitter {
+    background-color: #1da1f2;
+    color: white;
+}
+
+#socialshare .share-reddit, .share-reddit {
+    background-color: #ff4500;
+    color: white;
+}
+
+.share-disabled {
+    color: #333 !important;
+}
+
+.community-advert {
+    background: #a1a1a1 !important;
+    border-color: #006400
+}
+
+.community-advert button {
+    opacity: 1;
+    color: #006400;
+    text-shadow: none;
+}
+
+.input-group-text {
+    background-color: #a1a1a1 !important;
+    border-color: #818181 !important;
+}
+
+.custom-select {
+    background-color: #818181 !important;
+}
+
+kbd {
+    border-color: #818181 !important;
+    background-color: #979797 !important;
+}
+
+.prepend-options {
+    border-color: #444 !important;
+    background-color: #444 !important;
+}
+
+.modal-content .card-body {
+    background-color: #373737 !important;
+}
+
+#simplecook {
+    background-color: #474747 !important;
+}
+
+.consent-cookie-yes {
+    background-color: #c1e2b3 !important;
+    color: black !important;
+}
+
+.consent-cookie-no {
+    background-color: #f44336 !important;
+    color: #ffffff !important;
+}
+
+.new-cookie-msg {
+    color: white;
+}
+
+div.argmenuitem {
+    max-width: 250px;
+}
+
+div.argmenuitem span.argtitle {
+    font-weight: bold;
+    display: block;
+    overflow-x: hidden;
+    overflow-anchor: visible;
+    text-overflow: ellipsis;
+}
+
+div.argmenuitem span.argdescription {
+    max-height: 150px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-style: italic;
+    font-size: smaller;
+    display: block;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow-anchor: visible;
+    overflow-y: hidden;
+}
+
+.open-in-cppinsights * {
+    vertical-align: middle;
+}

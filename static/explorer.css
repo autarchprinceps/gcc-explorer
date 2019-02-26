@@ -1,0 +1,488 @@
+@import url("~@fortawesome/fontawesome-free/css/all.min.css");
+@import url("~vis/dist/vis.css");
+
+/* TEMP HACK: https://github.com/Microsoft/monaco-editor/issues/349 */
+.quick-open-tree .row {
+    margin-left: 0;
+}
+
+/*
+ * https://github.com/Microsoft/monaco-editor/issues/417
+ * Safari 10.1, fails inherit correct visibility from parent when we change the visibility of parent element from hidden to inherit, in this particular case.
+ */
+.monaco-editor-hover .monaco-scrollable-element {
+    visibility: visible;
+}
+
+body {
+    overflow: hidden;
+}
+
+.navbar-godbolt {
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img.beta-overlay {
+    display: none;
+}
+
+.beta .navbar-brand img.beta-overlay {
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.navbar-brand img.dev-overlay {
+    display: none;
+}
+
+.dev .navbar-brand img.dev-overlay {
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.btn-light:focus {
+    box-shadow: none !important;
+}
+
+.top-bar .btn-light:disabled,
+.bottom-bar .btn-light:disabled {
+    cursor: not-allowed;
+}
+
+.float-link {
+    z-index: 100;
+    position: absolute;
+    bottom: 0.5em;
+    right: 2.5em;
+    display: inline-block;
+    padding: 0.25em;
+    font-size: x-small;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.popover.libs-popover {
+    max-width: 800px !important;
+    max-height: 400px !important;
+}
+
+.template {
+    display: none;
+}
+
+.compiler-picker {
+    min-width: 14em;
+}
+
+.compiler-picker .selectize-input {
+    text-align: center;
+}
+
+.function-picker {
+    min-width: 14em;
+    width: 99%;
+}
+
+.gccdump-pass-picker {
+    min-width: 14em;
+    width: 99%;
+}
+
+li.tweet {
+    padding: 3px 20px;
+}
+
+.diff-picker {
+    max-width: 20em;
+    min-width: 14em;
+}
+
+.diff-picker .compiler {
+    font-weight: bold;
+}
+
+.diff-picker .options {
+    padding-left: 0.5em;
+    font-size: small;
+}
+
+.diff-picker .meta {
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: x-small;
+}
+
+.diff-picker .meta li {
+    padding: 0;
+    display: inline;
+    margin: 0 10px 0 0;
+}
+
+#root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.address {
+    display: inline;
+}
+
+.opcodes {
+    display: inline;
+}
+
+.opcode {
+    margin-right: 0.2em;
+}
+
+.binary-side {
+    text-align: left;
+    float: left;
+    clear: none;
+    width: 100%;
+}
+
+.highlighted {
+    font-weight: bold;
+}
+
+.lm_splitter.lm_vertical .lm_drag_handle {
+    height: 10px;
+    top: -2.5px;
+}
+
+.lm_splitter.lm_horizontal .lm_drag_handle {
+    width: 10px;
+    left: -2.5px;
+}
+
+pre.content {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    overflow: auto;
+}
+
+pre.content p {
+    margin: 0;
+}
+
+pre.content.wrap {
+    word-break: keep-all;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+}
+
+.compile-time {
+    font-size: x-small;
+    font-style: italic;
+}
+
+.url-parse-info {
+    font-size: small;
+    margin-top: 1em;
+    font-style: italic;
+}
+
+.libs-container ul {
+    float: left;
+    clear: none;
+}
+
+.lib-list {
+    margin: 3px;
+    padding: 3px;
+    text-align: left;
+}
+
+.lib-header {
+    padding-left: 1px;
+}
+
+.lib-item {
+    list-style: none;
+}
+
+.lib-checkbox {
+    display: inline;
+}
+
+.lib-label {
+    display: inline;
+    padding: 5px 0 5px 5px;
+}
+
+.lib-separator {
+    margin: 3px 0 3px 0;
+    padding: 0 2px 0 2px;
+}
+
+.small-v-scrollable {
+    max-height: 8em;
+    overflow-y: auto;
+}
+
+.linked-code-decoration-margin {
+    width: 5px !important;
+    left: 3px;
+}
+
+.linked-code-decoration-inline {
+    font-weight: 600;
+}
+
+.modal-content .well {
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+@media (min-width: 1200px) {
+    .modal-dialog {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .modal-dialog {
+        width: 1200px;
+    }
+}
+
+.navbar-nav.navbar-center {
+    float: left; /* by default */
+}
+
+@media (min-width: 1300px) {
+    .navbar-nav.navbar-center {
+        float: none;
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}
+
+.community-advert {
+    display: none;
+    max-width: 300px;
+    height: 44px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+@media (min-width: 1000px) {
+    .community-advert {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .community-advert {
+        max-width: 500px;
+    }
+}
+
+.community-hide {
+    padding-left: 5px;
+}
+
+.community-hide button {
+    font-size: small;
+    opacity: 1;
+    color: #67c52a;
+}
+
+#notifications {
+    max-width: 33%;
+    position: fixed;
+    bottom: 3px;
+    right: 5px;
+}
+
+.notification {
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+.font-size-list {
+    min-width: 43px !important;
+    width: auto;
+}
+
+.font-option {
+    text-align: center;
+}
+
+.opt-decoration {
+    width: 8px !important;
+    left: 3px;
+}
+
+.compiler-list {
+    display: block;
+    overflow: auto;
+}
+
+.cfg-toolbar table {
+    width: 100%;
+}
+
+.graph-placeholder {
+    width: 100%;
+    height: 100%;
+}
+
+.clear-cache {
+    position: absolute;
+    right: 0;
+}
+
+.change-language {
+    line-height: 14px;
+    min-width: 100px !important;
+}
+
+.short-compiler-name {
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+.header-fontscale {
+    padding-right: 1em;
+}
+
+.local-file {
+    display: none;
+}
+
+.save-file {
+    display: none;
+}
+
+.save-btn {
+    margin-left: 5px;
+}
+
+button.dropdown-item.btn.btn-light.btn-sm {
+    margin-left: 0 !important;
+}
+
+.opens-new-window {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.lib-described {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: help;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.program-exec-output {
+    font-family: "Courier New", Courier, monospace;
+    padding-left: 2%;
+}
+
+.lib-arrow {
+    display: inline-table;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    margin-right: 2px;
+}
+
+.share-disabled {
+    cursor: not-allowed;
+}
+
+.share-item {
+    display: block;
+    overflow: auto;
+    padding: 3px;
+}
+
+.share-item:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.share-item-logo {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/* While we find a better solution, lets up this a bit */
+.compiler-picker .selectize-dropdown-content {
+    max-height: 300px !important;
+}
+
+.compiler-picker .selectize-dropdown-content .option {
+    padding: 0 10px;
+}
+
+.compiler-options-popover {
+    font-family: monospace;
+}
+
+.navbar-nav a.nav-link {
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.navbar-nav a.nav-link:hover {
+    border-radius: 5px;
+}
+
+kbd {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0.1em 0.5em;
+    margin: 0 0.2em;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+}
+
+#simplecook {
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#simplecook .message {
+    display: block;
+    flex: 1 1 auto;
+    max-width: 100%;
+}
+
+.new-cookie-msg {
+    display: inline;
+    margin: 0 2px 0 2px;
+}
