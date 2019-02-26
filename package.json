@@ -8,7 +8,7 @@
   },
   "main": "./app.js",
   "dependencies": {
-      "connect": "2.3.x",
+      "connect": "3.0.0",
       "async": "0.1.x",
       "nopt": "1.0.x",
       "temp": "0.4.x",
